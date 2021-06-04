@@ -1,0 +1,32 @@
+
+
+<style>
+    .col{
+        background: chartreuse;
+        text-align: center;
+    }
+</style>
+
+            <div class="col">
+                <table class="responsive-table highlight">
+                    <thead>
+                      <tr>
+                        <th>Name</th>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <th>Gender</th> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <th>Paygrade</th>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <th>Pay</th>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+                      </tr>
+                    </thead>
+
+                    <tr *ngFor="let emp of authService.employee">
+                      <td>{{emp.name}}</td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <td>{{emp.gender}}</td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <td>{{emp.paygrade}}</td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <td>{{emp.pay}}</td>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                    </tr>
+                  </table>     
+  
+  </div>
+
